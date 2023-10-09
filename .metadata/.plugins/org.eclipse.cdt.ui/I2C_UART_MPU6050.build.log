@@ -1,0 +1,10 @@
+22:27:27 **** Incremental Build of configuration Debug for project I2C_UART_MPU6050 ****
+make -j8 all 
+arm-none-eabi-size   I2C_UART_MPU6050.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17612	    100	   2076	  19788	   4d4c	I2C_UART_MPU6050.elf
+Finished building: default.size.stdout
+ 
+
+22:27:27 Build Finished. 0 errors, 0 warnings. (took 255ms)
+

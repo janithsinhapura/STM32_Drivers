@@ -1,0 +1,16 @@
+13:59:45 **** Build of configuration Debug for project Test ****
+make -j8 all 
+arm-none-eabi-gcc -o "Test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\JMS\STM32CubeIDE\workspace_1.13.2\Test\STM32F401RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Test.elf
+ 
+arm-none-eabi-size   Test.elf 
+arm-none-eabi-objdump -h -S  Test.elf  > "Test.list"
+   text	   data	    bss	    dec	    hex	filename
+  28176	    260	   7724	  36160	   8d40	Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: Test.list
+ 
+
+13:59:46 Build Finished. 0 errors, 0 warnings. (took 1s.16ms)
+
